@@ -17,6 +17,19 @@ Yendor is a faithful reimplementation of the legendary 1980 roguelike **Rogue 5.
 
 Descend into the procedurally generated Dungeons of Doom. Fight 26 types of monsters. Wield swords, wear armor, quaff mysterious potions, and read arcane scrolls. Every run is different. Every death is permanent. And somewhere in the depths lies the **Amulet of Yendor**.
 
+## Screenshots
+
+<div class="screenshots">
+  <img src="{{ '/screenshots/01_title_screen.png' | relative_url }}" alt="Title Screen">
+  <img src="{{ '/screenshots/02_dungeon_exploration.png' | relative_url }}" alt="Dungeon Exploration">
+  <img src="{{ '/screenshots/03_combat_gameplay.png' | relative_url }}" alt="Combat Gameplay">
+  <img src="{{ '/screenshots/04_inventory_management.png' | relative_url }}" alt="Inventory Management">
+  <img src="{{ '/screenshots/06_campaign_selection.png' | relative_url }}" alt="Campaign Selection">
+  <img src="{{ '/screenshots/05_settings_screen.png' | relative_url }}" alt="Settings Screen">
+</div>
+
+## Features
+
 <div class="features">
   <div class="feature">
     <h3>Faithful to the Original</h3>
