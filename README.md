@@ -4,6 +4,7 @@ Marketing site, privacy policy, and support hub for [Yendor](https://apps.apple.
 
 ## Links
 
+- **Download**: [Mac App Store](https://apps.apple.com/app/yendor/id6746498844)
 - **Website**: https://atypical-consulting.github.io/YendorSupport/
 - **Privacy Policy**: https://atypical-consulting.github.io/YendorSupport/privacy
 - **Support / Bug Reports**: https://github.com/Atypical-Consulting/YendorSupport/issues
