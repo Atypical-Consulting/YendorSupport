@@ -1,13 +1,32 @@
 title: Yendor
-description: A faithful reimplementation of the classic roguelike Rogue 5.4.4
+tagline: Exploring the Dungeons of Doom
+description: "Yendor is a faithful reimplementation of the classic 1980 roguelike Rogue 5.4.4. Procedurally generated dungeons, permadeath, pixel art, and narrative saga campaigns. Available on the Mac App Store."
 url: "https://atypical-consulting.github.io"
 baseurl: "/YendorSupport"
+lang: en
 theme: null
+
+author:
+  name: phmatray
+  url: https://github.com/phmatray
+
+social:
+  name: Atypical Consulting
+  links:
+    - https://github.com/Atypical-Consulting
+
+twitter:
+  card: summary_large_image
+
+logo: /YendorSupport/logo-yendor.png
+
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 defaults:
   - scope:
       path: ""
     values:
       layout: "default"
+      image: /YendorSupport/screenshots/01_title_screen.png

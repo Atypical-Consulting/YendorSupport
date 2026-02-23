@@ -1,7 +1,9 @@
 ---
 layout: default
 title: "Privacy Policy - Yendor"
-description: "Privacy Policy for the Yendor macOS application."
+description: "Privacy Policy for the Yendor macOS roguelike game. Yendor collects no personal data and runs entirely offline."
+image: /YendorSupport/logo-yendor.png
+keywords: "yendor privacy policy, yendor data collection, yendor macos app privacy"
 ---
 
 <div class="content" markdown="1">

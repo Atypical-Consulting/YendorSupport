@@ -1,14 +1,16 @@
 ---
 layout: default
-title: "Yendor - Exploring the Dungeons of Doom"
-description: "A faithful reimplementation of the classic 1980 roguelike Rogue 5.4.4, built with Rust and modern web technologies."
+title: "Yendor - Classic Roguelike Dungeon Crawler for macOS"
+description: "Yendor is a faithful reimplementation of the classic 1980 roguelike Rogue 5.4.4 for macOS. Procedurally generated dungeons, permadeath, pixel art, and narrative saga campaigns. Free on the Mac App Store."
+image: /YendorSupport/screenshots/02_dungeon_exploration.png
+keywords: "yendor, roguelike, rogue 5.4.4, dungeon crawler, macos game, mac app store, permadeath, pixel art, procedural generation, turn-based rpg, rust game, retro game, classic roguelike"
 ---
 
 <div class="hero">
-  <img src="{{ '/logo-yendor.png' | relative_url }}" alt="Yendor">
+  <img src="{{ '/logo-yendor.png' | relative_url }}" alt="Yendor — classic roguelike dungeon crawler logo" width="180" height="180">
   <h1>Yendor</h1>
   <p class="tagline">Exploring the Dungeons of Doom</p>
-  <a href="https://apps.apple.com/app/yendor/id6746498844" class="badge">Download on the Mac App Store</a>
+  <a href="https://apps.apple.com/app/yendor/id6746498844" class="badge" rel="noopener">Download on the Mac App Store</a>
 </div>
 
 ## The Classic Roguelike, Reborn
@@ -20,12 +22,12 @@ Descend into the procedurally generated Dungeons of Doom. Fight 26 types of mons
 ## Screenshots
 
 <div class="screenshots">
-  <img src="{{ '/screenshots/01_title_screen.png' | relative_url }}" alt="Title Screen">
-  <img src="{{ '/screenshots/02_dungeon_exploration.png' | relative_url }}" alt="Dungeon Exploration">
-  <img src="{{ '/screenshots/03_combat_gameplay.png' | relative_url }}" alt="Combat Gameplay">
-  <img src="{{ '/screenshots/04_inventory_management.png' | relative_url }}" alt="Inventory Management">
-  <img src="{{ '/screenshots/06_campaign_selection.png' | relative_url }}" alt="Campaign Selection">
-  <img src="{{ '/screenshots/05_settings_screen.png' | relative_url }}" alt="Settings Screen">
+  <img src="{{ '/screenshots/01_title_screen.png' | relative_url }}" alt="Yendor title screen with Classic, Campaigns, and Settings menu options" width="1280" height="800" loading="lazy">
+  <img src="{{ '/screenshots/02_dungeon_exploration.png' | relative_url }}" alt="Yendor dungeon exploration showing procedurally generated rooms with fog of war" width="1280" height="800" loading="lazy">
+  <img src="{{ '/screenshots/03_combat_gameplay.png' | relative_url }}" alt="Yendor combat gameplay with monster encounters and combat log" width="1280" height="800" loading="lazy">
+  <img src="{{ '/screenshots/04_inventory_management.png' | relative_url }}" alt="Yendor inventory screen showing weapons, armor, potions, and scrolls" width="1280" height="800" loading="lazy">
+  <img src="{{ '/screenshots/06_campaign_selection.png' | relative_url }}" alt="Yendor saga campaign selection showing The Crypts of Ashenmoor with chapter list" width="1280" height="800" loading="lazy">
+  <img src="{{ '/screenshots/05_settings_screen.png' | relative_url }}" alt="Yendor settings screen with gameplay options, autopickup, and visual feedback toggles" width="1280" height="800" loading="lazy">
 </div>
 
 ## Features
@@ -57,9 +59,13 @@ Descend into the procedurally generated Dungeons of Doom. Fight 26 types of mons
   </div>
 </div>
 
+## What is a Roguelike?
+
+A roguelike is a subgenre of role-playing games characterized by procedurally generated levels, turn-based gameplay, and permanent death. The genre takes its name from **Rogue**, the 1980 game by Michael Toy, Ken Arnold, and Glenn Wichman. Yendor brings that original experience to modern macOS while preserving the challenge and depth that made Rogue a classic.
+
 ## About
 
-Yendor is developed by [phmatray](https://github.com/phmatray) at [Atypical Consulting](https://github.com/Atypical-Consulting).
+Yendor is developed by [phmatray](https://github.com/phmatray) at [Atypical Consulting](https://github.com/Atypical-Consulting). It is free to download on the [Mac App Store](https://apps.apple.com/app/yendor/id6746498844).
 
 Based on the original **Rogue** by Michael Toy, Ken Arnold, and Glenn Wichman (1980).
 
