@@ -4,7 +4,7 @@ title: "Privacy Policy - Yendor"
 description: "Privacy Policy for the Yendor macOS application."
 ---
 
-<div class="content">
+<div class="content" markdown="1">
 
 # Privacy Policy
 
