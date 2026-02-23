@@ -1,0 +1,59 @@
+name: Feature Request
+description: Suggest a new feature or improvement for Yendor
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement! We'd love to hear your ideas.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or motivation
+      description: Is your feature request related to a problem? Describe what frustrates you or what's missing.
+      placeholder: I find it frustrating when...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Describe the solution you'd like to see.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Have you considered any alternative solutions or workarounds?
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which part of the game does this relate to?
+      options:
+        - Gameplay mechanics
+        - Dungeon generation
+        - Combat
+        - Items (potions, scrolls, weapons, armor, rings, sticks)
+        - Monster behavior
+        - Saga / Campaign mode
+        - User interface
+        - Controls / Keybindings
+        - Audio / Music
+        - Visuals / Graphics
+        - Performance
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Any other context, mockups, or references that might help.
