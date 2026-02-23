@@ -21,13 +21,31 @@ Descend into the procedurally generated Dungeons of Doom. Fight 26 types of mons
 
 ## Screenshots
 
-<div class="screenshots">
-  <img src="{{ '/screenshots/01_title_screen.png' | relative_url }}" alt="Yendor title screen with Classic, Campaigns, and Settings menu options" width="1280" height="800" loading="lazy">
-  <img src="{{ '/screenshots/02_dungeon_exploration.png' | relative_url }}" alt="Yendor dungeon exploration showing procedurally generated rooms with fog of war" width="1280" height="800" loading="lazy">
-  <img src="{{ '/screenshots/03_combat_gameplay.png' | relative_url }}" alt="Yendor combat gameplay with monster encounters and combat log" width="1280" height="800" loading="lazy">
-  <img src="{{ '/screenshots/04_inventory_management.png' | relative_url }}" alt="Yendor inventory screen showing weapons, armor, potions, and scrolls" width="1280" height="800" loading="lazy">
-  <img src="{{ '/screenshots/06_campaign_selection.png' | relative_url }}" alt="Yendor saga campaign selection showing The Crypts of Ashenmoor with chapter list" width="1280" height="800" loading="lazy">
-  <img src="{{ '/screenshots/05_settings_screen.png' | relative_url }}" alt="Yendor settings screen with gameplay options, autopickup, and visual feedback toggles" width="1280" height="800" loading="lazy">
+<div class="gallery">
+  <div class="gallery-item featured">
+    <img src="{{ '/screenshots/02_dungeon_exploration.png' | relative_url }}" alt="Yendor dungeon exploration showing procedurally generated rooms with fog of war" width="2880" height="1800" loading="lazy">
+    <span class="caption">Dungeon Exploration</span>
+  </div>
+  <div class="gallery-item">
+    <img src="{{ '/screenshots/03_combat_gameplay.png' | relative_url }}" alt="Yendor combat gameplay with monster encounters and combat log" width="2880" height="1800" loading="lazy">
+    <span class="caption">Combat</span>
+  </div>
+  <div class="gallery-item">
+    <img src="{{ '/screenshots/04_inventory_management.png' | relative_url }}" alt="Yendor inventory screen showing weapons, armor, potions, and scrolls" width="2880" height="1800" loading="lazy">
+    <span class="caption">Inventory</span>
+  </div>
+  <div class="gallery-item">
+    <img src="{{ '/screenshots/06_campaign_selection.png' | relative_url }}" alt="Yendor saga campaign selection showing The Crypts of Ashenmoor with chapter list" width="2880" height="1800" loading="lazy">
+    <span class="caption">Saga Campaigns</span>
+  </div>
+  <div class="gallery-item">
+    <img src="{{ '/screenshots/01_title_screen.png' | relative_url }}" alt="Yendor title screen with Classic, Campaigns, and Settings menu options" width="2880" height="1800" loading="lazy">
+    <span class="caption">Title Screen</span>
+  </div>
+  <div class="gallery-item">
+    <img src="{{ '/screenshots/05_settings_screen.png' | relative_url }}" alt="Yendor settings screen with gameplay options, autopickup, and visual feedback toggles" width="2880" height="1800" loading="lazy">
+    <span class="caption">Settings</span>
+  </div>
 </div>
 
 ## Features

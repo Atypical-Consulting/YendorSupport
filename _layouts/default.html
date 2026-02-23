@@ -252,25 +252,101 @@
     .feature h3 { margin-top: 0; color: var(--gold); font-size: 1.05rem; }
     .feature p { color: var(--text-muted); font-size: 0.93rem; margin-bottom: 0; }
 
-    /* Screenshots section */
-    .screenshots {
+    /* Gallery */
+    .gallery {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
       gap: 16px;
       margin: 32px 0;
     }
 
-    .screenshots img {
-      width: 100%;
+    .gallery-item {
+      position: relative;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
       border-radius: 12px;
       border: 1px solid var(--border);
+      cursor: pointer;
+      transition: border-color 0.2s, transform 0.2s;
     }
+
+    .gallery-item:hover {
+      border-color: var(--gold-dim);
+      transform: translateY(-2px);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .gallery-item .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 8px 12px;
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+
+    .gallery-item:hover .caption { opacity: 1; }
+
+    /* Featured screenshot (full width) */
+    .gallery-item.featured {
+      grid-column: 1 / -1;
+      aspect-ratio: 16 / 10;
+    }
+
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      background: rgba(0, 0, 0, 0.92);
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      cursor: zoom-out;
+    }
+
+    .lightbox.active { display: flex; }
+
+    .lightbox img {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 8px;
+      box-shadow: 0 8px 48px rgba(0, 0, 0, 0.5);
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 16px;
+      right: 24px;
+      color: var(--text-muted);
+      font-size: 2rem;
+      cursor: pointer;
+      line-height: 1;
+      transition: color 0.2s;
+      background: none;
+      border: none;
+    }
+
+    .lightbox-close:hover { color: var(--gold); }
 
     /* Responsive */
     @media (max-width: 600px) {
       .hero h1 { font-size: 2rem; letter-spacing: 2px; }
       h1 { font-size: 1.8rem; }
       header .container { flex-direction: column; gap: 12px; }
+      .gallery { grid-template-columns: 1fr; }
+      .gallery-item.featured { aspect-ratio: 16 / 10; }
     }
   </style>
 </head>
@@ -294,6 +370,38 @@
       {{ content }}
     </div>
   </main>
+
+  <!-- Lightbox overlay -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-label="Screenshot preview">
+    <button class="lightbox-close" aria-label="Close preview">&times;</button>
+    <img src="" alt="">
+  </div>
+
+  <script>
+    (function() {
+      var lightbox = document.getElementById('lightbox');
+      if (!lightbox) return;
+      var lbImg = lightbox.querySelector('img');
+      var items = document.querySelectorAll('.gallery-item');
+
+      items.forEach(function(item) {
+        item.addEventListener('click', function() {
+          var img = item.querySelector('img');
+          lbImg.src = img.src;
+          lbImg.alt = img.alt;
+          lightbox.classList.add('active');
+        });
+      });
+
+      lightbox.addEventListener('click', function() {
+        lightbox.classList.remove('active');
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') lightbox.classList.remove('active');
+      });
+    })();
+  </script>
 
   <footer>
     <div class="container">
