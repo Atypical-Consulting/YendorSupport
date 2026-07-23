@@ -98,6 +98,14 @@ See the [open issues](https://github.com/Atypical-Consulting/YendorSupport/issue
 
 ---
 
+<!-- portfolio-techstack:start -->
+
+## Tech Stack
+
+- **HTML**
+
+<!-- portfolio-techstack:end -->
+
 <!-- portfolio-sections:start -->
 
 ## Contributing
