@@ -1,3 +1,5 @@
+![YendorSupport banner](.github/banner.png)
+
 # YendorSupport
 
 <!-- Badges: Row 1 — Identity -->
