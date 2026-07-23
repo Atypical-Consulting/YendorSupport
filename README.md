@@ -14,6 +14,28 @@
 
 Marketing site, privacy policy, and support hub for [Yendor](https://apps.apple.com/app/yendor/id6746498844) — a faithful reimplementation of the classic roguelike Rogue 5.4.4.
 
+## Features
+
+This repo is the game's public-facing site, not the game itself:
+
+- **Marketing landing page** (`index.md`) — hero, feature grid and a screenshot gallery, built with Jekyll and deployed via `github-pages` on GitHub Pages.
+- **Privacy policy** (`privacy.md`) — the policy page required for the Mac App Store listing.
+- **Screenshot gallery** — six in-game screenshots (title, exploration, combat, inventory, campaigns, settings) served from `screenshots/`.
+- **SEO & sharing metadata** — `jekyll-seo-tag` and `jekyll-sitemap` plugins with per-page `image`/`description` front matter for search and social previews.
+- **Support entry point** — routes bug reports straight to the [GitHub issue tracker](https://github.com/Atypical-Consulting/YendorSupport/issues).
+- **Automated dependency updates** — `renovate.json` keeps the Jekyll/Ruby gems current.
+
+## Usage
+
+This is a static [Jekyll](https://jekyllrb.com) site, published automatically via GitHub Pages. To preview it locally:
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+Then open `http://localhost:4000/YendorSupport/` (the site's `baseurl` in `_config.yml` is `/YendorSupport`). The live site is at https://atypical-consulting.github.io/YendorSupport/.
+
 ## Links
 
 - **Download**: [Mac App Store](https://apps.apple.com/app/yendor/id6746498844)
@@ -46,6 +68,17 @@ Developed by [phmatray](https://github.com/phmatray) at [Atypical Consulting](ht
 Built with care by [Atypical Consulting](https://atypical.garry-ai.cloud) — opinionated, production-grade open source.
 
 [![Contributors](https://contrib.rocks/image?repo=Atypical-Consulting/YendorSupport)](https://github.com/Atypical-Consulting/YendorSupport/graphs/contributors)
+
+---
+
+## Roadmap
+
+- [ ] Add a changelog / "what's new" page as saga campaigns ship
+- [ ] Add a press kit page (logo, screenshots, boilerplate) for coverage requests
+- [ ] Add a lightweight FAQ / troubleshooting section to cut down duplicate support issues
+- [ ] Track App Store badge click-throughs to measure how the site converts
+
+See the [open issues](https://github.com/Atypical-Consulting/YendorSupport/issues) for details.
 
 ---
 
